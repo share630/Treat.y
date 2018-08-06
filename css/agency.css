@@ -64,6 +64,11 @@ section h3.section-subheading {
   font-weight: 700;
 }
 
+.backgroundshit{
+    background-image: url("img/pattern_1.jpg");
+    background-repeat: repeat-x;
+}
+
 .btn-xl {
   font-size: 20px;
   padding: 20px 40px;
@@ -74,14 +79,27 @@ section h3.section-subheading {
   border-color: #05C79B;
 }
 
+#hola {
+   color:black;
+   background-color: white;
+   border-color: black;
+}
+
+
+
+
+#hola:hover, #hola:active, #hola:focus {
+    background-color: #05C79B;
+    border-color: black;
+}
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: #05C79B !important;
   border-color: #05C79B !important;
-  color: white;
+  color: #03745a;
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgb(3, 116, 90)!important;
 }
 
 ::-moz-selection {
@@ -123,7 +141,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #049574;
+  color: #03644e;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -133,10 +151,11 @@ img::-moz-selection {
   letter-spacing: 1px;
   color: white;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #05c79b;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #05c79b;
+  color: black;
 }
 
 @media (min-width: 992px) {
@@ -147,7 +166,7 @@ img::-moz-selection {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: white;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -161,7 +180,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: white;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -184,6 +203,9 @@ img::-moz-selection {
     overflow: hidden;
 } */
 ----------------------------------------------------------
+.shitthefck{
+    background-image: repeat-x;
+}
 
 *{ box-sizing: border-box; }
 .video-background {
@@ -232,7 +254,7 @@ header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
   font-style: italic;
   line-height: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
 }
@@ -241,7 +263,7 @@ header.masthead .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
 }
@@ -267,6 +289,39 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #fff;
   }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 200px;
+  width: 20px;
+  outline: black;
+  background-size: 100%, 100%;
+  border: none;
+  background-image: none;
+  cursor: pointer;
+    
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 60px;
+  color: black;
+    width: 15%;
+    height: 60px;
+    z-index: 2;
+    position: absolute;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 60px;
+  color: black;
+    width: 15%;
+    height: 60px;
+    z-index: 2;
+    position: absolute;
 }
 
 .service-heading {
@@ -700,6 +755,17 @@ section#contact :-ms-input-placeholder {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.activeMonth {
+  background-color: #05C79B !important;
+  border-color: #05C79B !important;
+  color: white !important;
+}
+.activeItem {
+  background-color: #05C79B !important;
+  border-color: #05C79B !important;
+  color: white !important;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
@@ -741,14 +807,4 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #05C79B;
-}
-.activeMonth {
-  background-color: #05C79B !important;
-  border-color: #05C79B !important;
-  color: white !important;
-}
-.activeItem {
-  background-color: #05C79B !important;
-  border-color: #05C79B !important;
-  color: white !important;
 }
