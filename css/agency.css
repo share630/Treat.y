@@ -13,15 +13,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #05C79B;
 }
 
 a:hover {
-  color: #fec503;
+  color: #049574;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #05C79B !important;
 }
 
 h1,
@@ -65,18 +65,18 @@ section h3.section-subheading {
 }
 
 .btn-xl {
-  font-size: 18px;
+  font-size: 20px;
   padding: 20px 40px;
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #05C79B;
+  border-color: #05C79B;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #05C79B !important;
+  border-color: #05C79B !important;
   color: white;
 }
 
@@ -85,12 +85,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #05C79B;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #05C79B;
   text-shadow: none;
 }
 
@@ -113,7 +113,7 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #05C79B;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -123,7 +123,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #049574;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -136,7 +136,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #05c79b;
 }
 
 @media (min-width: 992px) {
@@ -169,10 +169,11 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
+
+ /*!header.masthead {
   text-align: center;
   color: white;
-  background-image: url("./img/hqdefault.jpg");
+  background-image: url("#");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -180,7 +181,47 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    overflow: hidden;
+} */
+----------------------------------------------------------
+
+*{ box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
 }
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+--------------------------------------------
 
 header.masthead .intro-text {
   padding-top: 150px;
@@ -193,6 +234,7 @@ header.masthead .intro-text .intro-lead-in {
   line-height: 22px;
   margin-bottom: 25px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
 }
 
 header.masthead .intro-text .intro-heading {
@@ -201,6 +243,7 @@ header.masthead .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -214,6 +257,7 @@ header.masthead .intro-text .intro-heading {
     line-height: 40px;
     margin-bottom: 25px;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
@@ -221,6 +265,7 @@ header.masthead .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
   }
 }
 
@@ -250,7 +295,7 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgb(5, 199, 155);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -454,7 +499,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #05C79B;
 }
 
 .timeline > li .timeline-image h4 {
@@ -625,7 +670,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #05C79B;
   box-shadow: none;
 }
 
@@ -695,5 +740,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #05C79B;
 }

@@ -1,0 +1,182 @@
+<!------------- Check Out Page  -------------------->
+<!------------- Seperate CSS    -------------------->
+<!------------- Dont forget to ADD HEADER PHP file -------->
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+
+<link href="checkout.css" rel="stylesheet">
+
+<h2 class="text-center font-bold pt-4 pb-5 mb-5"><strong>Check Out Progress Bar</strong></h2>
+
+<!-- Stepper -->
+<div class="steps-form-2">
+    <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
+        <div class="steps-step-2">
+            <a href="#step-1" type="button" class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Profile"><i class="fa fa-user" aria-hidden="true"></i></a>
+        </div>
+        <div class="steps-step-2">
+            <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Check Box"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+        </div>
+        <div class="steps-step-2">
+            <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Payments"><i class="fa fa-credit-card" aria-hidden="true"></i></a>
+        </div>
+        <div class="steps-step-2">
+            <a href="#step-4" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect mr-0" data-toggle="tooltip" data-placement="top" title="Confirm"><i class="fa fa-check" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- First Step -->
+<form role="form" action="" method="post">
+    <div class="row setup-content-2" id="step-1">
+        <div class="col-md-12">
+            <h3 class="font-weight-bold pl-0 my-4"><strong>Profile</strong></h3>
+            <div class="form-group md-form">
+                <label for="yourEmail-2" data-error="wrong" data-success="right">Email</label>
+                <input id="yourEmail-2" type="email" required="required" class="form-control validate">
+            </div>
+            <div class="form-group md-form">
+                <label for="yourUsername-2" data-error="wrong" data-success="right">First Name</label>
+                <input id="yourUsername-2" type="text" required="required" class="form-control validate">
+            </div>
+            <div class="form-group md-form mt-3">
+                <label for="yourPassword-2" data-error="wrong" data-success="right">Last Name</label>
+                <input id="yourPassword-2" type="password" required="required" class="form-control validate">
+            </div>
+            <div class="form-group md-form mt-3">
+                <label for="repeatPassword-2" data-error="wrong" data-success="right">Address</label>
+                <input id="repeatPassword-2" type="password" required="required" class="form-control validate">
+            </div>
+            <button class="btn btn-mdb-color btn-rounded nextBtn-2 float-right" type="button">Next</button>
+        </div>
+    </div>
+
+<!-- Second Step -->
+    <div class="row setup-content-2" id="step-5">
+        <div class="col-md-12">
+            <h3 class="font-weight-bold pl-0 my-4"><strong>Check Box</strong></h3>
+            <div class="form-group md-form">
+                <label for="yourName-2" data-error="wrong" data-success="right">First Name</label>
+                <input id="yourName-2" type="text" required="required" class="form-control validate">
+            </div>
+            <div class="form-group md-form mt-3">
+                <label for="secondName-2" data-error="wrong" data-success="right">Second Name</label>
+                <input id="secondName-2" type="text" required="required" class="form-control validate">
+            </div>
+            <div class="form-group md-form">
+                <label for="surname-2" data-error="wrong" data-success="right">Surname</label>
+                <input id="surname-2" type="text" required="required" class="form-control validate">
+            </div>
+            <div class="form-group md-form mt-3">
+                <label for="yourAddress-2" data-error="wrong" data-success="right">Address</label>
+                <textarea id="yourAddress-2" type="text" required="required" rows="2" class="md-textarea validate form-control"></textarea>
+            </div>
+            <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
+            <button class="btn btn-mdb-color btn-rounded nextBtn-2 float-right" type="button">Next</button>
+        </div>
+    </div>
+
+    <!-- Third Step -->
+    <div class="row setup-content-2" id="step-3">
+        <div class="col-md-12">
+            <h3 class="font-weight-bold pl-0 my-4"><strong>Payments</strong></h3>
+            <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Payment Details
+                    </h3>
+                    <div class="checkbox pull-right">
+                        <label>
+                            <input type="checkbox" />
+                            Remember
+                        </label>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                    <div class="form-group">
+                        <label for="cardNumber">
+                            CARD NUMBER</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                required autofocus />
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group">
+                                <label for="expityMonth">
+                                    EXPIRY DATE</label>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                </div>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-5 pull-right">
+                            <div class="form-group">
+                                <label for="cvCode">
+                                    CV CODE</label>
+                                <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span>Final Payment</a>
+                </li>
+            </ul>
+            <br/>
+            <a href="#" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
+        </div>
+    </div>
+</div>
+
+            <div class="form-check">
+                <input type="checkbox" id="checkbox111" class="form-check-input">
+                <label for="checkbox111" class="form-check-label">I agree to the terms and conditions</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="checkbox112" class="form-check-input">
+                <label for="checkbox112" class="form-check-label">I want to receive newsletter</label>
+            </div>
+            <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
+            <button class="btn btn-mdb-color btn-rounded nextBtn-2 float-right" type="button">Next</button>
+        </div>
+    </div>
+
+    <!-- Fourth Step -->
+    <div class="row setup-content-2" id="step-4">
+        <div class="col-md-12">
+            <h3 class="font-weight-bold pl-0 my-4"><strong>Confirm your order</strong></h3>
+            <h2 class="text-center font-weight-bold my-4">Thank you for your order!</h2>
+            <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
+            <button class="btn btn-success btn-rounded float-right" type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+
+<script src="js/checkout.js"></script>
+<!------------ DONT FORGET TO ADD FOOTER PHP ----------->
+
