@@ -93,7 +93,7 @@
        <div class="video-foreground">
 
        <iframe frameborder="0" height="100%" width="100%"
-    src="https://www.youtube.com/embed/KuJTDQ_Wv50?controls=0&autoplay=1&loop=1&controls=0  &version=3&playlist=KuJTDQ_Wv50&showinfo=0&mute=1&autohide=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    src="https://www.youtube.com/embed/KuJTDQ_Wv50?controls=0&autoplay=1&loop=1&controls=0  &version=3&playlist=KuJTDQ_Wv50&showinfo=0&mute=1&autohide=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
                 </div></div></div>
         <div class="container">
@@ -108,7 +108,7 @@
                       <li>
                         <p class="intro-heading text-uppercase" style="padding-top:20px;">Eat global.</p>
 
-                           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="margin-top:10px;" href="#services">get started</a>
+                           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="margin-top:10px;" href="#services">get started </a>
 
 
                       </li>
@@ -781,10 +781,12 @@
         itemCounter3 = "$" + 90 + " /month";
         $('.numberValue').text(itemCounter3);
       }
+      // This if else is comparing to variables that are returning. The numbers being returned here are from your buttons on your front. value = weekly and monthly = monthly button to change the conditionals all you have to do is add the values returned from your button and the integer in the center of item counter (line 786)
       else if (value == "9" && monthly == "3"){
         itemCounter3 = "$" + 135 + " /month";
         $('.numberValue').text(itemCounter3);
       }
+
       else {
         itemCounter3 = "$" + 0 + " /month";
         $('.numberValue').text(itemCounter3);
