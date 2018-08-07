@@ -11,6 +11,11 @@
     -ms-user-select: none;
     user-select: none;
 }
+.tastyItems {
+  width: 250px;
+  margin: 0 auto;
+  text-align: left;
+}
 
 /* Hide the browser's default checkbox */
 .con1tainer1 input {
